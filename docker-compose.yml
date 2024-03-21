@@ -1,0 +1,17 @@
+version: "3"
+services:
+  server-one:
+    container_name: server-one
+    build: ./apps/server-one
+    ports:
+      - "80:80"
+  server-two:
+    container_name: server-two
+    build: ./apps/server-two
+    ports:
+      - 81:80
+  server-three:
+    container_name: server-three
+    build:  ./apps/server-three
+    ports:
+      - 82:80
